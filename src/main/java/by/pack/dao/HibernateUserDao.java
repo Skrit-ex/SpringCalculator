@@ -17,25 +17,25 @@ public class HibernateUserDao {
 
 
     @Transactional
-    public void save(User user){
+    public void save(User user) {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.save(user);
     }
 
     @Transactional(readOnly = true)
-    public Optional<User> findByEmail(String email){
-    Session currentSession = sessionFactory.getCurrentSession();
-    Query<User> query = currentSession.createQuery("from User where email = :email", User.class);
-    query.setParameter("email", email);
-    try {
-        return Optional.of(query.getSingleResult());
-    }catch (NoResultException e){
-        return Optional.empty();
-    }
+    public Optional<User> findByEmail(String email) {
+        Session currentSession = sessionFactory.getCurrentSession();
+        Query<User> query = currentSession.createQuery("from User where email = :email", User.class);
+        query.setParameter("email", email);
+        try {
+            return Optional.of(query.getSingleResult());
+        } catch (NoResultException e) {
+            return Optional.empty();
+        }
     }
 
     @Transactional
-    public User findById(long id){
+    public User findById(long id) {
         Session currentSession = sessionFactory.getCurrentSession();
         return currentSession.get(User.class, id);
     }
