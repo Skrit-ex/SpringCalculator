@@ -16,18 +16,18 @@ public class UserService {
     @Autowired
     private HibernateUserDao hibernateUserDao;
 
-    public void save(RegUserDto regUserDto){
+    public void save(RegUserDto regUserDto) {
         User user = RegUserDtoMapper.RegUserToUser(regUserDto);
         hibernateUserDao.save(user);
     }
 
-    public Optional<SessionUser>login(LoginUserDto loginUserDto){
-        Optional<User> user =hibernateUserDao.findByEmail(loginUserDto.getEmail());
-        if(user.isPresent()){
+    public Optional<SessionUser> login(LoginUserDto loginUserDto) {
+        Optional<User> user = hibernateUserDao.findByEmail(loginUserDto.getEmail());
+        if (user.isPresent()) {
 
-            User currentUser =user.get();
+            User currentUser = user.get();
 
-            if(currentUser.getPassword().equals(loginUserDto.getPassword())){
+            if (currentUser.getPassword().equals(loginUserDto.getPassword())) {
                 return Optional.of(UserMapper.userToSessionUser(currentUser));
             }
         }
