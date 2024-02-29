@@ -33,4 +33,10 @@ public class HibernateUserDao {
         return Optional.empty();
     }
     }
+
+    @Transactional
+    public User findById(long id){
+        Session currentSession = sessionFactory.getCurrentSession();
+        return currentSession.get(User.class, id);
+    }
 }
