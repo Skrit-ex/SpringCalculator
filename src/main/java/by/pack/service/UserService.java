@@ -8,9 +8,11 @@ import by.pack.entity.User;
 import by.pack.mapper.RegUserDtoMapper;
 import by.pack.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Service
 public class UserService {
 
     @Autowired

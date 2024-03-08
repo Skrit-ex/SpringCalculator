@@ -5,10 +5,13 @@ import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.convert.Property;
+import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import javax.sql.DataSource;
@@ -16,9 +19,10 @@ import java.util.Properties;
 
 
 @Configuration
-@ComponentScan(basePackages = "by.pack")
+@ComponentScan(basePackages = "by.pack.controller")
 @EnableWebMvc
-public class WebConfiguration {
+@EnableTransactionManagement
+public class WebConfiguration extends WebMvcConfigurationSupport {
 
     @Bean
     public ViewResolver viewResolver() {
@@ -46,8 +50,15 @@ public class WebConfiguration {
         localSessionFactoryBean.setPackagesToScan("by.pack");
         localSessionFactoryBean.setHibernateProperties(hibernateProperties());
         return localSessionFactoryBean;
-
     }
+
+    @Bean
+    public PlatformTransactionManager platformTransactionManager() {
+        HibernateTransactionManager hibernateTransactionManager = new HibernateTransactionManager();
+        hibernateTransactionManager.setSessionFactory(sessionFactoryBean().getObject());
+        return hibernateTransactionManager;
+    }
+
 
     private Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();

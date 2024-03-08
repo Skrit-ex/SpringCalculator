@@ -6,6 +6,7 @@ import by.pack.dto.RegUserDto;
 import by.pack.entity.SessionUser;
 import by.pack.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -49,13 +50,13 @@ public class UserController {
         return "redirect:/user/login";
     }
 
-    @GetMapping("/login")
+    @GetMapping("login")
     public String login(Model model){
         model.addAttribute("newLoginUser", new LoginUserDto());
             return "login";
         }
 
-        @PostMapping("/login")
+        @PostMapping("login")
          public String login(@ModelAttribute("newLoginUser") @Valid LoginUserDto loginUserDto,
                              BindingResult bindingResult,
                              Model model,

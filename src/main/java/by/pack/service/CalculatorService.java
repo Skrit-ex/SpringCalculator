@@ -7,9 +7,11 @@ import by.pack.entity.User;
 import by.pack.factory.OperationFactory;
 import by.pack.mapper.OperationDtoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Service
 public class CalculatorService {
 
     @Autowired
