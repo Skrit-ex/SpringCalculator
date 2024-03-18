@@ -19,10 +19,10 @@ import java.util.Properties;
 
 
 @Configuration
-@ComponentScan(basePackages = "by.pack.controller")
+@ComponentScan(basePackages = "by.pack")
 @EnableWebMvc
 @EnableTransactionManagement
-public class WebConfiguration extends WebMvcConfigurationSupport {
+public class WebConfiguration {
 
     @Bean
     public ViewResolver viewResolver() {
