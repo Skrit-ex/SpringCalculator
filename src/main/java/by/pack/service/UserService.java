@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-@Import({HibernateUserDao.class})
 public class UserService {
 
     @Autowired

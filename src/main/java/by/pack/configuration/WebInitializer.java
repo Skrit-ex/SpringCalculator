@@ -1,7 +1,5 @@
 package by.pack.configuration;
 
-
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 
@@ -14,7 +12,7 @@ public class WebInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{WebInitializer.class};
+        return new Class[]{WebConfiguration.class};
     }
 
     @Override

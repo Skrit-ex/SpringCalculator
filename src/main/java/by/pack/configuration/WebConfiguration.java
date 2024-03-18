@@ -11,7 +11,6 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import javax.sql.DataSource;
@@ -36,7 +35,7 @@ public class WebConfiguration {
     @Bean
     public DataSource dataSource() {
         BasicDataSource basicDataSource = new BasicDataSource();
-        basicDataSource.setDriverClassName("org.postgres.Driver");
+        basicDataSource.setDriverClassName("org.postgresql.Driver");
         basicDataSource.setUrl("jdbc:postgresql://localhost:5432/postgres");
         basicDataSource.setUsername("postgres");
         basicDataSource.setPassword("admin");
