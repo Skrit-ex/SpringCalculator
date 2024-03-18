@@ -16,7 +16,7 @@
 <s:form action="/user/reg" modelAttribute="newUser">
     <s:input path="firstname" placeholder="Firstname"/>
     <br>
-    <s:errors path="firsname"/>
+    <s:errors path="firstname"/>
     <br>
     <s:input path="lastname" placeholder="Lastname"/>
     <br>

@@ -20,7 +20,7 @@
   <br>
   <s:input path="password" placeholder="Password"/>
   <br>
-  <s:errors path="Password"/>
+  <s:errors path="password"/>
   <br>
   <s:button>Login</s:button>
 </s:form>

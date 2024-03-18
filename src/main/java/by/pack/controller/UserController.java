@@ -7,6 +7,7 @@ import by.pack.entity.SessionUser;
 import by.pack.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -21,9 +22,9 @@ import javax.validation.Valid;
 import java.util.Optional;
 
 @Controller
+@Import({UserService.class})
 @RequestMapping("/user")
 public class UserController {
-
 
     @Autowired
     private UserService userService;

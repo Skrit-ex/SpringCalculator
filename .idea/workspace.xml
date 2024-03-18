@@ -10,16 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9753c2b8-91b2-4ffc-9ecd-4f58a73e672f" name="Changes" comment="added">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/pack/controller/CalculatorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/calc.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/configuration/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/configuration/WebConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/service/CalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/service/CalculatorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/reg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/reg.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,12 +54,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "G:/JDK/Exercises/src/TeachMeSkills/SpringCalc",
+    "last_opened_file_path": "C:/Users/Игорь/Desktop/SpringCalc-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "7664c224dede63c7dfa65afcde64f561"
+    "spring.configuration.checksum": "3618dc84f659c38eecb220212b196951"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -177,7 +170,8 @@
       <workItem from="1709230210433" duration="4247000" />
       <workItem from="1709660589644" duration="3492000" />
       <workItem from="1709878378158" duration="5083000" />
-      <workItem from="1709883653981" duration="1825000" />
+      <workItem from="1709883653981" duration="2072000" />
+      <workItem from="1710788675422" duration="622000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1709152270088</created>
@@ -221,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709663211820</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added">
+      <created>1709885681900</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709885681901</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
