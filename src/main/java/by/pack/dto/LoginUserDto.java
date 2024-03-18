@@ -11,7 +11,7 @@ import javax.validation.constraints.Pattern;
 public class LoginUserDto {
 
 
-    @Pattern(regexp = "^[\\w-.]+@([\\w-]+.)+[\\w-]{2,4}$", message = "The Email isn't correct")
+    @Pattern(regexp = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$", message = "The Email isn't correct")
     private String email;
 
     private String password;
