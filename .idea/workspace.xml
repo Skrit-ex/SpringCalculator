@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9753c2b8-91b2-4ffc-9ecd-4f58a73e672f" name="Changes" comment="add postgres depends">
+    <list default="true" id="9753c2b8-91b2-4ffc-9ecd-4f58a73e672f" name="Changes" comment="error with postmapping with login.jsp">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/pack/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/regex/email.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -192,7 +192,8 @@
       <workItem from="1709883653981" duration="2072000" />
       <workItem from="1710788675422" duration="5829000" />
       <workItem from="1710794632937" duration="3368000" />
-      <workItem from="1710832317237" duration="2879000" />
+      <workItem from="1710832317237" duration="3167000" />
+      <workItem from="1710871989443" duration="1620000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1709152270088</created>
@@ -271,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710798001886</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="error with postmapping with login.jsp">
+      <created>1710835494055</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710835494055</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +302,8 @@
     <MESSAGE value="error import" />
     <MESSAGE value="solve problem with connecting postgres" />
     <MESSAGE value="add postgres depends" />
-    <option name="LAST_COMMIT_MESSAGE" value="add postgres depends" />
+    <MESSAGE value="error with postmapping with login.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="error with postmapping with login.jsp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
