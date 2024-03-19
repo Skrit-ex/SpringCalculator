@@ -16,7 +16,6 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="nav-link disabled" aria-disabled="true">HomePage</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,7 +25,23 @@
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
                 <a class="nav-link" href="/user/reg">Registration</a>
                 <a class="nav-link" href="/user/login">LogIn</a>
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+
+                <c:if test="${sessionScope.userSession != null}">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/calc">Calculator</a>
+                    </li>
+                </c:if>
+
+                <li class="nav-item">
+
+                    <c:if test="${sessionScope.userSession == null}">
+                    <a class="nav-link disabled">Hello Guest</a>
+                    </c:if>
+
+                    <c:if test="${sessionScope.userSession != null}">
+                    <a class="nav-link disabled">Hello ${sessionScope.userSession.username}</a>
+                    </c:if>
+                </li>
             </div>
         </div>
     </div>
