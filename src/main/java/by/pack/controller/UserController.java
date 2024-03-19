@@ -48,13 +48,13 @@ public class UserController {
         return "redirect:/user/login";
     }
 
-    @GetMapping("login")
+    @GetMapping("/login")
     public String login(Model model){
         model.addAttribute("newLoginUser", new LoginUserDto());
             return "login";
         }
 
-        @PostMapping("login")
+        @PostMapping("/login")
          public String login(@ModelAttribute("newLoginUser") @Valid LoginUserDto loginUserDto,
                              BindingResult bindingResult,
                              Model model,

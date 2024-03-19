@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<s:form action="user/login" modelAttribute="newLoginUser">
+<s:form action="/user/login" modelAttribute="newLoginUser">
   <s:input path="email" placeholder="Email"/>
   <br>
   <s:errors path="email"/>
