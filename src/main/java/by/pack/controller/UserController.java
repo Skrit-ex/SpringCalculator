@@ -5,6 +5,7 @@ import by.pack.dto.LoginUserDto;
 import by.pack.dto.RegUserDto;
 import by.pack.entity.SessionUser;
 import by.pack.service.UserService;
+import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,7 +16,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpSession;
-import javax.validation.ConstraintViolationException;
 import javax.validation.Valid;
 import java.util.Optional;
 
