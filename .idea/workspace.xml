@@ -10,9 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9753c2b8-91b2-4ffc-9ecd-4f58a73e672f" name="Changes" comment="added homePage">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/pack/entity/SessionOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/pack/service/OperationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/controller/CalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/controller/CalculatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/dao/HibernateOperationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/dao/HibernateOperationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/dto/OperationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/dto/OperationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/calc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/calc.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +28,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -194,6 +198,7 @@
       <workItem from="1710794632937" duration="3368000" />
       <workItem from="1710832317237" duration="3167000" />
       <workItem from="1710871989443" duration="2641000" />
+      <workItem from="1711084392368" duration="7593000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1709152270088</created>
@@ -312,16 +317,5 @@
     <MESSAGE value="error with postmapping with login.jsp" />
     <MESSAGE value="added homePage" />
     <option name="LAST_COMMIT_MESSAGE" value="added homePage" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/by/pack/controller/CalculatorController.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -5,6 +5,7 @@ import by.pack.dto.OperationDto;
 import by.pack.entity.Operation;
 import by.pack.entity.SessionUser;
 import by.pack.service.CalculatorService;
+import by.pack.service.OperationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
@@ -26,6 +27,9 @@ public class CalculatorController {
 
     @Autowired
     private CalculatorService calculatorService;
+
+    @Autowired
+    private OperationService operationService;
 
     @GetMapping
     public String calc(Model model){
@@ -52,6 +56,7 @@ public class CalculatorController {
 
         if(operation.isPresent()){
             model.addAttribute("result", operation.get().getResult());
+            operationService.save(operationDto);
             return "calc";
         }
         return "calc";

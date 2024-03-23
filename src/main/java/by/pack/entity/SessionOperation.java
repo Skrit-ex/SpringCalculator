@@ -1,18 +1,15 @@
-package by.pack.dto;
+package by.pack.entity;
 
 
-import by.pack.entity.User;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.validation.constraints.Pattern;
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
-@ToString
-public class OperationDto {
+public class SessionOperation {
 
 
     @Pattern(regexp = "^\\d+\\.?\\d*", message = "The Num1 isn't number, try again")
@@ -28,6 +25,4 @@ public class OperationDto {
     private String result;
 
     private LocalDateTime time;
-
-    private User user;
 }

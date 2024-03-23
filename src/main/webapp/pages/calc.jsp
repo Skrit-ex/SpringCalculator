@@ -12,7 +12,7 @@
     <title>Calculator</title>
 </head>
 <body>
-
+<jsp:include page="home.jsp"></jsp:include>
 <s:form action="/calc" method="post" modelAttribute="newOperationDto">
 
     <s:input path="num1" placeholder="Num1"/>

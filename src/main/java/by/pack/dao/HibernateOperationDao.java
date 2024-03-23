@@ -8,7 +8,8 @@ import org.springframework.stereotype.Component;
 import org.hibernate.SessionFactory;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
+import javax.persistence.NoResultException;
+import java.util.Optional;
 
 @Component
 public class HibernateOperationDao {
@@ -23,11 +24,22 @@ public class HibernateOperationDao {
     }
 
     @Transactional(readOnly = true)
-    public List<Operation> findByUser(long id) {
+    public Optional<Operation> findByEmail(String email) {
         Session currentSession = sessionFactory.getCurrentSession();
-        Query<Operation> operationQuery = currentSession.createQuery("from Operation where user_id= : id order by desc", Operation.class);
-        operationQuery.setParameter("id", id);
-        return operationQuery.getResultList();
+        Query<Operation> operationQuery = currentSession.createQuery("from Operation where email = :email order by desc", Operation.class);
+        operationQuery.setParameter("email", email);
+        try {
+            return Optional.of(operationQuery.getSingleResult());
+        }
+        catch (NoResultException e){
+            return Optional.empty();
+        }
+    }
+
+    @Transactional
+    public Operation findById(long id){
+        Session currentSession = sessionFactory.getCurrentSession();
+        return  currentSession.get(Operation.class, id);
     }
 
 }
