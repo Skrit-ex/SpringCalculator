@@ -4,6 +4,8 @@ package by.pack.controller;
 import by.pack.dto.LoginUserDto;
 import by.pack.dto.RegUserDto;
 import by.pack.entity.SessionUser;
+import by.pack.service.CalculatorOperation;
+import by.pack.service.CalculatorService;
 import by.pack.service.UserService;
 import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +27,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private CalculatorService calculatorService;
 
     @GetMapping("/reg")
     public String reg(Model model){

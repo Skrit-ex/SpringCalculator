@@ -28,8 +28,10 @@ public class CalculatorService {
 
             CalculatorOperation calculatorOperation =optionalCalculatorOperation.get();
             calculatorOperation.process();
+            Operation finalResult = calculatorOperation.getFinalResult();
             if(operation.getUser() != null){
                 hibernateUserDao.save(user);
+                operation.setResult(finalResult.getResult());
             }
             return Optional.of(calculatorOperation.getFinalResult());
 
