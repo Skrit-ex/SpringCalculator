@@ -1,5 +1,6 @@
 package by.pack.service;
 
+import by.pack.dao.HibernateOperationDao;
 import by.pack.dao.HibernateUserDao;
 import by.pack.dto.OperationDto;
 import by.pack.entity.Operation;
@@ -15,6 +16,8 @@ import java.util.Optional;
 public class CalculatorService {
 
     @Autowired
+    private HibernateOperationDao operationDao;
+    @Autowired
     private HibernateUserDao hibernateUserDao;
 
     public Optional<Operation> calculate (OperationDto operationDto){
@@ -28,13 +31,11 @@ public class CalculatorService {
 
             CalculatorOperation calculatorOperation =optionalCalculatorOperation.get();
             calculatorOperation.process();
-            Operation finalResult = calculatorOperation.getFinalResult();
             if(operation.getUser() != null){
-                hibernateUserDao.save(user);
-                operation.setResult(finalResult.getResult());
+                operationDao.save(calculatorOperation.getFinalResult());
+
             }
             return Optional.of(calculatorOperation.getFinalResult());
-
         }
         return Optional.empty();
     }

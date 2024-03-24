@@ -14,8 +14,7 @@ public class OperationService {
     private HibernateOperationDao hibernateOperationDao;
 
 
-    public void save(OperationDto operationDto){
-        Operation operation = OperationDtoMapper.operationDtoToOperation(operationDto);
+    public void save(Operation operation){
         hibernateOperationDao.save(operation);
     }
 }

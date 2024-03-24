@@ -9,11 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9753c2b8-91b2-4ffc-9ecd-4f58a73e672f" name="Changes" comment="error with ConstraintViolationException of Hibernate">
+    <list default="true" id="9753c2b8-91b2-4ffc-9ecd-4f58a73e672f" name="Changes" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/controller/CalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/controller/CalculatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/dao/HibernateOperationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/dao/HibernateOperationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/dto/OperationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/dto/OperationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/entity/SessionOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/entity/SessionOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/entity/SessionUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/entity/SessionUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/service/CalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/service/CalculatorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/service/OperationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/service/OperationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +204,9 @@
       <workItem from="1711084392368" duration="7593000" />
       <workItem from="1711227119379" duration="2559000" />
       <workItem from="1711264337207" duration="2126000" />
-      <workItem from="1711275713492" duration="2405000" />
+      <workItem from="1711275713492" duration="5021000" />
+      <workItem from="1711285726562" duration="4587000" />
+      <workItem from="1711301220807" duration="3750000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1709152270088</created>
@@ -298,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711228349063</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="changes">
+      <created>1711278183540</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1711278183540</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +339,7 @@
     <MESSAGE value="error with postmapping with login.jsp" />
     <MESSAGE value="added homePage" />
     <MESSAGE value="error with ConstraintViolationException of Hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="error with ConstraintViolationException of Hibernate" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
 </project>

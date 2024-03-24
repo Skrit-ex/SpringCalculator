@@ -25,9 +25,4 @@ public class OperationDto {
 
     private long userId;
 
-    private String result;
-
-    private LocalDateTime time;
-
-    private User user;
 }

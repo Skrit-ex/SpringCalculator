@@ -19,7 +19,6 @@ public class SessionOperation {
     private String num2;
 
     private String type;
-
     private long userId;
 
     private String result;

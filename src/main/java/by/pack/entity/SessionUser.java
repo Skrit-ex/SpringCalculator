@@ -2,9 +2,11 @@ package by.pack.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.validation.constraints.Pattern;
 
+@ToString
 @Getter
 @Setter
 public class SessionUser {
