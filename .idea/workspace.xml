@@ -9,9 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9753c2b8-91b2-4ffc-9ecd-4f58a73e672f" name="Changes" comment="changes error">
+    <list default="true" id="9753c2b8-91b2-4ffc-9ecd-4f58a73e672f" name="Changes" comment="added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/service/CalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/service/CalculatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/calc.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/calc.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +202,7 @@
       <workItem from="1711301220807" duration="5065000" />
       <workItem from="1711391135892" duration="3120000" />
       <workItem from="1711483053083" duration="371000" />
-      <workItem from="1711536215478" duration="2155000" />
+      <workItem from="1711536215478" duration="3069000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1709152270088</created>
@@ -315,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711305944642</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added">
+      <created>1711538455981</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1711538455981</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +342,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add" />
-    <MESSAGE value="added" />
     <MESSAGE value="error import" />
     <MESSAGE value="solve problem with connecting postgres" />
     <MESSAGE value="add postgres depends" />
@@ -343,6 +350,7 @@
     <MESSAGE value="error with ConstraintViolationException of Hibernate" />
     <MESSAGE value="changes" />
     <MESSAGE value="changes error" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes error" />
+    <MESSAGE value="added" />
+    <option name="LAST_COMMIT_MESSAGE" value="added" />
   </component>
 </project>

@@ -36,6 +36,10 @@
 
                 <li class="nav-item">
 
+                    <c:if test="${sessionScope.userSession != null}">
+                    <a class="nav-link disabled">Hello ${sessionScope.userSession.username}</a>
+                    </c:if>
+
                     <c:if test="${sessionScope.userSession == null}">
                     <a class="nav-link disabled">Hello Guest</a>
                     </c:if>

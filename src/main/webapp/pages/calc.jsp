@@ -23,6 +23,7 @@
     <br>
     <s:errors path="num2"/>
 
+    <br>
     <s:select path="type">
               <s:option value="SUM" label="SUM"/>
               <s:option value="SUB" label="SUB"/>
