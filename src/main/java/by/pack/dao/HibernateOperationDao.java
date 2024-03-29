@@ -22,11 +22,6 @@ public class HibernateOperationDao {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.save(operation);
     }
-    @Transactional
-    public void saveResult(Operation operation){
-        Session currentSession = sessionFactory.getCurrentSession();
-        currentSession.save(operation.getResult());
-    }
 
     @Transactional(readOnly = true)
     public Optional<Operation> findByEmail(String email) {
