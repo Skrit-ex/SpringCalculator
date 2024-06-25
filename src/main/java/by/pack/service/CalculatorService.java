@@ -40,23 +40,4 @@ public class CalculatorService {
         return Optional.empty();
     }
 
-
-        public Optional<Operation> calculate1(OperationDto operationDto){
-
-        Operation operation = OperationDtoMapper.operationDtoToOperation(operationDto);
-        User user = hibernateUserDao.findById(operationDto.getUserId());
-        operation.setUser(user);
-
-        Optional<CalculatorOperation> optionalCalculatorOperation = OperationFactory.creatOperation(operation);
-        if(optionalCalculatorOperation.isPresent()){
-            CalculatorOperation calculatorOperation = optionalCalculatorOperation.get();
-            calculatorOperation.process();
-            if(operation.getUser() != null){
-                operationDao.save(calculatorOperation.getFinalResult());
-            }
-            return Optional.of(calculatorOperation.getFinalResult());
-        }
-        return Optional.empty();
-        }
-
 }

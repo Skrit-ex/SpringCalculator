@@ -11,8 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9753c2b8-91b2-4ffc-9ecd-4f58a73e672f" name="Changes" comment="added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/dao/HibernateOperationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/dao/HibernateOperationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/controller/CalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/controller/CalculatorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/pack/service/CalculatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/pack/service/CalculatorService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,28 +47,28 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/JDK/SpringCalculator&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;3618dc84f659c38eecb220212b196951&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "G:/JDK/BookStore",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "3618dc84f659c38eecb220212b196951"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\JDK\SpringCalculator\resources\regex" />
@@ -207,6 +206,13 @@
       <workItem from="1711565351797" duration="2921000" />
       <workItem from="1711620936027" duration="1179000" />
       <workItem from="1711622323606" duration="10756000" />
+      <workItem from="1711738148900" duration="1252000" />
+      <workItem from="1711968164622" duration="6090000" />
+      <workItem from="1711978865185" duration="9460000" />
+      <workItem from="1712053190909" duration="661000" />
+      <workItem from="1712343190855" duration="363000" />
+      <workItem from="1714920544472" duration="298000" />
+      <workItem from="1715271096024" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1709152270088</created>
@@ -334,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711539313425</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added">
+      <created>1711738303550</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1711738303550</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

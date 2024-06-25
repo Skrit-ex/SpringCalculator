@@ -27,8 +27,6 @@ public class CalculatorController {
     @Autowired
     private CalculatorService calculatorService;
 
-    @Autowired
-    private OperationService operationService;
 
     @GetMapping
     public String calc(Model model){
